@@ -1,0 +1,27 @@
+*{
+	font-family: 'LXGW WenKai', 'Fira Code', Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+}
+body{
+	height: 100vh;
+	width: 100vw;
+}
+div.row {
+	display: flex;
+	width: fit-content;
+	min-height: 1em;
+	border-bottom: 1px solid #000;
+}
+div.row:first-child {
+	background-color: #eee;
+	border-top: 1px solid #000;
+	font-weight: bold;
+}
+div.row div.cell:first-child {
+	border-left: 1px solid #999;
+}
+div.row div.cell {
+	border-right: 1px #999 solid;
+	min-height: 1em;
+	white-space: nowrap;
+}
