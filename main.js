@@ -81,3 +81,8 @@ function search() {
         }),
         e.send();
 }
+
+document.querySelector('input#inp').addEventListener("keydown", function(e) {
+    if (e.key == "Enter")
+        search();
+});
