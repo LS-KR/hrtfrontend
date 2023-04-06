@@ -1,6 +1,8 @@
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('DOMContentLoaded', showform('https://raw.githubusercontent.com/LS-KR/HRT-price-comparison/main/index.csv'));
+
+function showform(uri) {
     var e = new XMLHttpRequest();
-    e.open('get', 'https://raw.githubusercontent.com/LS-KR/HRT-price-comparison/main/index.csv'),
+    e.open('get', uri),
         e.addEventListener('load', function () {
             var t = document.createElement('canvas').getContext('2d');
             t.font = '1rem Consolas';
@@ -33,7 +35,16 @@ window.addEventListener('DOMContentLoaded', function () {
                 });
         }),
         e.send();
-});
+}
+
+function showmain() {
+    var i = document.querySelector('div#container').children.length;
+    while(i > 0) {
+        document.querySelector('div#container').removeChild(document.body.querySelector('div#container').childNodes[i - 1]);
+        i = i - 1
+    } 
+    showform('https://raw.githubusercontent.com/LS-KR/HRT-price-comparison/main/%E9%AA%97%E5%AD%90%E8%8D%AF%E5%95%86%E8%82%83%E5%8F%8D%E5%90%8D%E5%8D%95.csv');
+}
 
 function search() {
     var i = document.querySelector('div#container').children.length;
