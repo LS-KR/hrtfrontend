@@ -37,21 +37,22 @@ function showform(uri) {
         e.send();
 }
 
-function showmain() {
+function clearall() {
     var i = document.querySelector('div#container').children.length;
     while(i > 0) {
         document.querySelector('div#container').removeChild(document.body.querySelector('div#container').childNodes[i - 1]);
         i = i - 1
     } 
+}
+
+function showmain() {
+    clearall();
     showform('https://raw.githubusercontent.com/LS-KR/HRT-price-comparison/main/%E9%AA%97%E5%AD%90%E8%8D%AF%E5%95%86%E8%82%83%E5%8F%8D%E5%90%8D%E5%8D%95.csv');
 }
 
 function search() {
     var i = document.querySelector('div#container').children.length;
-    while(i > 0) {
-        document.querySelector('div#container').removeChild(document.body.querySelector('div#container').childNodes[i - 1]);
-        i = i - 1
-    } 
+    clearall();
     var e = new XMLHttpRequest();
     e.open('get', 'https://raw.githubusercontent.com/LS-KR/HRT-price-comparison/main/index.csv'),
         e.addEventListener('load', function(){
