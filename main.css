@@ -2,9 +2,12 @@
 	font-family: 'LXGW WenKai', 'Fira Code', Arial, Helvetica, sans-serif;
 	font-size: 1rem;
 }
-body{
+body {
 	height: 100vh;
 	width: 100vw;
+}
+div.contents {
+	margin: 60px 0 0 0;
 }
 div.row {
 	display: flex;
@@ -24,4 +27,32 @@ div.row div.cell {
 	border-right: 1px #999 solid;
 	min-height: 1em;
 	white-space: nowrap;
+}
+.controller {
+	text-align: center;
+	font-size: xx-large;
+	color: aliceblue;
+	margin: 10px auto;
+	overflow: hidden;
+}
+.navigation {
+    background: rgba(255, 143, 202, 0.85);
+    width: 100%;
+    box-shadow: 0 0 5px rgba(255, 120, 228, 0.25);
+    padding: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    overflow: hidden;
+}
+input.searchbar {
+	background: transparent;
+	border-radius: 10px;
+	border: solid aliceblue;
+	position: absolute;
+	right: 0;
+	top: 10px;
 }

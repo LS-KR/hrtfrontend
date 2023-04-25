@@ -95,6 +95,6 @@ function search() {
 }
 
 document.querySelector('input#inp').addEventListener("keydown", function(e) {
-    if (e.key == "Enter")
+    //if (e.key == "Enter")
         search();
 });
