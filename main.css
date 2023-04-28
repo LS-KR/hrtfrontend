@@ -70,7 +70,8 @@ div.row div.cell {
     color: #ffffff;
     text-decoration: none;
 }
-.search {
-	position: absolute;
-    right: 1rem;
+.db{
+    display: inline;
+    float: right;
+    margin-right: 4rem;
 }
