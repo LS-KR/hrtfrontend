@@ -1,23 +1,29 @@
 *{
 	font-family: 'LXGW WenKai', 'Fira Code', Arial, Helvetica, sans-serif;
 	font-size: 1rem;
+	color: white;
 }
 body {
 	height: 100vh;
 	width: 100vw;
+	background-color: #000;
 }
 div.contents {
-	margin: 60px 0 0 0;
+	margin-top: 60px;
+	width: min-content;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
 }
 div.row {
 	display: flex;
 	width: fit-content;
 	min-height: 1em;
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid #888;
 }
 div.row:first-child {
-	background-color: #eee;
-	border-top: 1px solid #000;
+	background-color: #222;
+	border-top: 1px solid #888;
 	font-weight: bold;
 }
 div.row div.cell:first-child {
@@ -28,31 +34,11 @@ div.row div.cell {
 	min-height: 1em;
 	white-space: nowrap;
 }
-.controller {
-	text-align: center;
-	font-size: xx-large;
+.searchbar {
+	background-color: #222;
 	color: aliceblue;
-	margin: 10px auto;
-	overflow: hidden;
-}
-.navigation {
-    background: rgba(255, 143, 202, 0.85);
-    width: 100%;
-    box-shadow: 0 0 5px rgba(255, 120, 228, 0.25);
-    padding: 0;
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    overflow: hidden;
-}
-input.searchbar {
-	background: transparent;
-	border-radius: 10px;
-	border: solid aliceblue;
-	position: absolute;
-	right: 0;
-	top: 10px;
+	border: solid #888;
+	border-radius: 5px;
+	border-width: 1px;
+	width: calc(100% - 1rem);
 }
