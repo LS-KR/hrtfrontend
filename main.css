@@ -42,3 +42,35 @@ div.row div.cell {
 	border-width: 1px;
 	width: calc(100% - 1rem);
 }
+.navigation {
+    background: rgba(255, 143, 202, 0.50);
+    width: 100%;
+    box-shadow: 0 0 5px rgba(255, 120, 228, 0.25);
+    padding: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    overflow: hidden;
+}
+.navi {
+    width: 100%;
+    overflow: hidden;
+}
+.navi li {
+    display: inline;
+    text-align: center;
+    width: 70px;
+    font-size: 19px;
+    margin-right: 20px;
+}
+.navi li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.search {
+	position: absolute;
+    right: 1rem;
+}
